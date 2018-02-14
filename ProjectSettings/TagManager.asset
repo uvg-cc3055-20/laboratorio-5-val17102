@@ -47,6 +47,9 @@ TagManager:
   - name: World
     uniqueID: 3691593213
     locked: 0
+  - name: Effects
+    uniqueID: 2462822407
+    locked: 0
   - name: Character
     uniqueID: 3780242681
     locked: 0

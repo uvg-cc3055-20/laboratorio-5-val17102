@@ -5,22 +5,23 @@ using UnityEngine.UI;
 
 public class Character : MonoBehaviour {
 
-    public List<GameObject> prefabs;
+
     Rigidbody2D rb2d;
     SpriteRenderer sr;
     Animator anim;
     private float speed = 5f;
     private float jumpForce = 250f;
     private bool facingRight = true;
+ 
 
-	// Use this for initialization
+
 	void Start () {
         rb2d = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
     }
 	
-	// Update is called once per frame
+
 	void Update () {
         float move = Input.GetAxis("Horizontal");
         if (move != 0) {
